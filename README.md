@@ -1,4 +1,4 @@
-**Projeto Wordpress**
+**Projeto Wordpress - challenge by coodesh**
 
 Este projeto tem como objetivo disponibilizar um site wordpress na AWS de forma automatizada utilizando as seguintes tecnologias:
 
@@ -7,10 +7,10 @@ Este projeto tem como objetivo disponibilizar um site wordpress na AWS de forma 
   * Cria uma máquina EC2 na AWS.
 * Ansible
   * Faz a atualização dos pacotes;
-  * Instala o Docker, Docker-Compose e o nginx;
-  * Clona o repositório https://github.com/nunes-raphael/wordpress.git;
-  * Executa o docker-compose para a criação dos containers wordpress + mysql; 
-  * Configura o nginx como proxy reverso.
+  * Instala o Docker, Docker-Compose;
+  * Copia o arquivo de configutação do nginx;
+  * Copia o docker-compose.yml  
+  * Executa o docker-compose para a criação dos containers Nginx (ptoxy), wordpress e mysql;   
 * ShellScript
   * Através do shell script é criada uma pipeline para construção do albiente 100% automatizada. 
     
@@ -28,11 +28,10 @@ Ansible - Procedimento de Instalação
 CONFIGURANDO O AMBIENTE:
 
 * Clonar o repositório: 
-  - https://github.com/nunes-raphael/infraestrutura-devops.git;
+  - [https://github.com/nunes-raphael/oodesh-devop.git](https://github.com/nunes-raphael/oodesh-devops.git);
+* Configurando a chave de acesso AWS   
+   - - ssh-add ./aws_ec2/wordpress-ec2.pem
 * Criando a infraestrutura na AWS
   - ./run.sh
 * Excluindo a infraestrutura na AWS
   - ./run.sh --destroy
-* Acessando o servidor na AWS
-  - cd ./aws_ec2
-  - ssh-add wordpress-ec2.pem
