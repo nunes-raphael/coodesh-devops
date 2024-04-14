@@ -10,7 +10,7 @@ Este projeto tem como objetivo disponibilizar um site wordpress na AWS de forma 
   * Instala o Docker, Docker-Compose;
   * Copia o arquivo de configutação do nginx;
   * Copia o docker-compose.yml  
-  * Executa o docker-compose para a criação dos containers Nginx (ptoxy), wordpress e mysql;   
+  * Executa o docker-compose para a criação dos containers Nginx (proxy), wordpress e mysql;   
 * ShellScript
   * Através do shell script é criada uma pipeline para construção do albiente 100% automatizada. 
     
