@@ -29,7 +29,8 @@ CONFIGURANDO O AMBIENTE:
 
 * Clonar o repositório: 
   - [https://github.com/nunes-raphael/oodesh-devop.git](https://github.com/nunes-raphael/oodesh-devops.git);
-* Configurando a chave de acesso AWS   
+* Configurando a chave de acesso AWS
+  - chmod 400 ./aws_ec2/wordpress-ec2.pem
   - ssh-add ./aws_ec2/wordpress-ec2.pem
 * Criando a infraestrutura na AWS
   - ./run.sh
